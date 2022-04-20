@@ -30,7 +30,7 @@ class Post
     def save
         file = File.new(file_path, "w:UTF-8")
 
-        for item in to_strings do
+        for item in to_string do
             file.puts(item)
         end
 
